@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iamlaziz.me/sitemap.xml
