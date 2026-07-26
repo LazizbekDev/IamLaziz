@@ -5,7 +5,15 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
   preprocess: vitePreprocess(),
   kit: {
-    adapter: adapter()
+    adapter: adapter({
+      runtime: 'nodejs20.x'
+    }),
+    prerender: {
+      handleHttpError: ({ path, message }) => {
+        if (path.startsWith('http')) return;
+        throw new Error(message);
+      }
+    }
   }
 };
 

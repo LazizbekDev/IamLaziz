@@ -63,7 +63,7 @@
   <div class="cta-row" bind:this={ctaEl}>
     <a href="/work" class="btn primary">View work →</a>
     <a
-      href="/Laziz Tojiboyev - Full-Stack Developer.pdf"
+      href="/laziz-tojiboyev-cv.pdf"
       class="btn ghost"
       download="Laziz-Tojiboyev-CV.pdf"
       data-sveltekit-reload
